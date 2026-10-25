@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarissa Emmeery Shaf's <br> Appreciation Corner</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #fff7ee;
+  font-family: Georgia, serif;
+  background: radial-gradient(ellipse at top, #b31111, #000000 65%);
+  text-align: center;
+}
+section {
+  min-height: 85vh;
+  padding: 90px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 { font-size: clamp(36px, 8vw, 64px); }
+h2 { color: #f2cf8d; }
+p { max-width: 620px; line-height: 1.9; }
+button {
+  padding: 13px 23px;
+  border: 1px solid #f2cf8d;
+  border-radius: 30px;
+  background: #f2cf8d;
+  color: #20162e;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px;
+}
+button:hover { transform: translateY(-2px); }
+.card {
+  width: min(100%, 600px);
+  padding: 28px;
+  border: 1px solid #ffffff30;
+  border-radius: 20px;
+  background: #ffffff0c;
+  margin: 12px 0;
+}
+.star { color: #f2cf8d; font-size: 24px; }
+.hidden { display: none !important; }
+a { color: #f2cf8d; }
+footer { padding: 30px; color: #c6bbd5; }
+</style>
+</head>
+<body>
+
+<section id="home">
+  <div class="star">✦ · ˚ ✧ · ✦</div>
+  <p>FOR MY CLARISSA EMEERY SHAF <3 </p>
+  <h1>Clarissa Emeery Shaf<br>Appreciation Corner</h1>
+  <p>A small corner of the internet, made just for you.</p>
+  <button onclick="showSection('letter')">See why Arka made this for you. ✨</button>
+</section>
+
+<section id="letter" class="hidden">
+  <h2>Why did Arka made this?</h2>
+  <div class="card">
+    <p>Emmyy sayaangg.</p>
+    <p>
+      Halooo sayangg!! Arkaa here! sayangg kamu tau ga kenapa aku bikin ini?
+      aku bikin ini semuaa dalam bentuk apresiasi untuk kamu karna kamu udah berjuang sangat keras,
+      kamu uda keren, uda selalu bikin bangga akuu. Jadi aku bikin ini simply karena aku bangga sama kamu.
+      I love you so much sayangg
+    </p>
+    <p>
+      Terima kasih udah selalu jadi diri kamu sendiri.
+      Aku harap kamu selalu inget bahwa kedepannya kamu akan selalu
+      didengarkan, dan didukung dalam setiap prosesmu.
+    </p>
+    <p>With lots of love,<br>Rafly Arka Syabil ♡</p>
+  </div>
+  <button onclick="showSection('memories')">Our Memories →</button>
+</section>
+
+<section id="memories" class="hidden">
+  <h2>Little Things I Appreciate About You.</h2>
+  <div class="card">
+    <div class="star">✦</div>
+    <h3>Your Kindness</h3>
+    <p>I always appreciate how caring you are <area shape=" coords="" href="" alt="">.</p>
+  </div>
+  <div class="card">
+    <div class="star">✧</div>
+    <h3>Your Efforts</h3>
+    <p> I always am so proud of you, you always being strong even when you're
+        in a heavy situation, thats just incredible to see sayangg.
+        No matter what happens, i will always love you
+    </p>
+  </div>
+  <div class="card">
+    <div class="star">♡</div>
+    <h3>Your Presence</h3>
+    <p>Thank you for being here with me and staying here.
+        you change a lot of things in me.</p>
+  </div>
+  <button onclick="showSection('playlist')">A Song for You →</button>
+</section>
+
+<section id="playlist" class="hidden">
+  <h2>Our Little Playlist</h2>
+  <div class="card">
+    <p>A song that reminds me of you.</p>
+    <p>This is so me towards you btw</p>
+    <a href="https://open.spotify.com/intl-id/track/0EDgUNdoWnRslGw6epuJY9?si=d11a4b1892ae44d8" target="_blank"
+       rel="noopener noreferrer">Listen to our song ♫</a>
+  </div>
+  <button onclick="showSection('surprise')">One Last Thing →</button>
+</section>
+
+<section id="surprise" class="hidden">
+  <h2>One Last Thing...</h2>
+  <p>There's one more little message waiting for you.</p>
+  <button onclick="reveal()">Open Your Message ♡</button>
+  <div id="finalMessage" class="card hidden">
+    <p>
+      No website could ever capture every good thing about you.
+      But I hope this little one reminds you that you are
+      appreciated, exactly as you are.
+    </p>
+    <p>Thank you for being you. ♡</p>
+  </div>
+</section>
+
+<footer>Made with care, just for you ✦</footer>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll("section").forEach(section => {
+    section.classList.add("hidden");
+  });
+  document.getElementById(id).classList.remove("hidden");
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
+function reveal() {
+  document.getElementById("finalMessage").classList.remove("hidden");
+}
+</script>
+</body>
+</html>
